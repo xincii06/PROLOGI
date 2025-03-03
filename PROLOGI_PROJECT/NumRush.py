@@ -48,23 +48,23 @@ bg_label.place(relwidth=1, relheight=1)  # Full screen background
 update_gif()  # Start animation
 
 # Create frames
-menu_frame = tk.Frame(root, bg="#000000")
+menu_frame = tk.Frame(root, bg="#5A5A5A")
 menu_frame.place(relx=0.5, rely=0.5, anchor="center")  # Center menu frame
 
-retro_font = tkFont.Font(family="Courier", size=20, weight="bold")
+retro_font = tkFont.Font(family="Courier", size=30, weight="bold")
 button_font = tkFont.Font(family="Courier", size=16, weight="bold")
 
 # Title Label
-menu_label = tk.Label(menu_frame, text="NUMRUSH", font=retro_font, bg="#000000", fg="#39FF14")
+menu_label = tk.Label(menu_frame, text="NUMRUSH", font=retro_font, bg="#5A5A5A", fg="#39FF14")
 menu_label.pack(pady=10)
 
 difficulty_var = tk.StringVar(value="easy")
 tk.Radiobutton(menu_frame, text="Easy", variable=difficulty_var, value="easy", font=button_font,
-               bg="#000000", fg="#FFD700", selectcolor="#000000").pack()
+               bg="#5A5A5A", fg="#FFD700", selectcolor="#000000").pack()
 tk.Radiobutton(menu_frame, text="Medium", variable=difficulty_var, value="medium", font=button_font,
-               bg="#000000", fg="#FFD700", selectcolor="#000000").pack()
+               bg="#5A5A5A", fg="#FFD700", selectcolor="#000000").pack()
 tk.Radiobutton(menu_frame, text="Hard", variable=difficulty_var, value="hard", font=button_font,
-               bg="#000000", fg="#FFD700", selectcolor="#000000").pack()
+               bg="#5A5A5A", fg="#FFD700", selectcolor="#000000").pack()
 
 # Center buttons by making them wider and using pack with padx and pady
 btn_width = 15
